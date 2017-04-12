@@ -5,7 +5,7 @@ require.config({
 		"css":"../lib/css.min",
 	   	"doT":'../lib/doT.min',
 		"director":'../lib/director.min',
-//		"pay":'../lib/WXpay',
+		"pay":'../lib/WXpay',
 	},
 	map: {
         '*': {

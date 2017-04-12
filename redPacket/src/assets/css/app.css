@@ -536,6 +536,9 @@ section {
   display: block;
   clear: both;
 }
+#container {
+  height: 100%;
+}
 #main {
   position: fixed;
   bottom: 50px;
@@ -638,14 +641,37 @@ section {
   text-align: center;
   margin-top: 12%;
 }
-.main-list li div {
+.main-list li .child-img {
+  position: relative;
   margin: 0 auto;
   width: 97px;
   height: 97px;
 }
-.main-list li div img {
+.main-list li .child-img img {
   width: 100%;
   height: 100%;
+}
+.main-list li .main-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  font-family: 'Roboto', 'Noto', 'Hiragino Sans GB', 'Microsoft YaHei', 'Hiragino Sans GB', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.main-list li .main-text p {
+  padding: 18% 0 6% 0;
+  color: white;
+}
+.main-list li .main-text div {
+  color: #fbda30;
 }
 .main-list li:nth-child(1),
 .main-list li:nth-child(2) {
@@ -680,7 +706,7 @@ section {
   width: 90%;
   text-align: center;
   margin: 0 auto;
-  padding: 30px 0 8px;
+  padding: 12% 0 8px;
   border-bottom: 3px solid white;
 }
 .record-box .record-main .list-title div {
@@ -721,7 +747,7 @@ section {
   width: 60%;
 }
 .personal-box {
-  padding-top: 41px;
+  padding-top: 13%;
   width: 93%;
   margin: 0 auto;
 }
@@ -787,12 +813,12 @@ section {
 }
 .personal-box .personal-list .my-money {
   float: left;
-  padding: 14px 0 ;
+  padding: 5% 0 ;
 }
 .personal-box .personal-list .recharge {
   float: right;
-  padding: 8px;
-  margin: 7px 5px 7px 0;
+  padding: 2%;
+  margin: 2% 2% 2% 0;
   background-color: #fe2d4c;
   color: white;
   border-radius: 5px;
@@ -906,6 +932,66 @@ section {
   width: 100%;
   height: 100%;
 }
+.wxpay-box {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.wxpay-box img {
+  width: 100%;
+  height: 100%;
+}
+.wxpay-box .wxpay-text {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  width: 75%;
+  text-align: center;
+  font-family: 'Roboto', 'Noto', 'Hiragino Sans GB', 'Microsoft YaHei', 'Hiragino Sans GB', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  font-size: 14px;
+}
+.wxpay-box .wxpay-text .wxpay-title {
+  font-size: 16px;
+  color: #f32428;
+}
+.wxpay-box .wxpay-text .wxpay-tips {
+  font-size: 12px;
+  color: #ffad3a;
+  margin: 5% 0;
+}
+.wxpay-box .wxpay-text .wxpay-first div {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin: 5% 0 6% 0;
+}
+.wxpay-box .wxpay-text .wxpay-first p {
+  font-size: 20px;
+  color: #f44a4c;
+  margin-bottom: 5%;
+}
+.wxpay-box .wxpay-text .wxpay-first .wxpay {
+  display: inline-block;
+  padding: 3% 20%;
+  color: white;
+  border-radius: 5px;
+  background-color: #3cb033;
+}
+.wxpay-box .wxpay-text .wxpay-two div {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin: 12% 0 6% 0;
+}
+.wxpay-box .wxpay-text .wxpay-two p {
+  display: inline-block;
+  padding: 3% 13%;
+  color: white;
+  border-radius: 5px;
+  background-color: #e24034;
+}
 @media screen and (min-width: 320px) {
   #footer .btn-list li span {
     margin-left: 12%;
@@ -926,7 +1012,7 @@ section {
   #footer .btn-list li span {
     margin-left: 15%;
   }
-  .main-list li div {
+  .main-list li .child-img {
     margin: 0 auto;
     width: 110px;
     height: 110px;
@@ -967,7 +1053,7 @@ section {
   #footer .btn-list li span {
     margin-left: 17%;
   }
-  .main-list li div {
+  .main-list li .child-img {
     margin: 0 auto;
     width: 116px;
     height: 120px;
@@ -977,6 +1063,9 @@ section {
   }
   #main .main-box .head .head-bgc {
     height: 43%;
+  }
+  .personal-box {
+    padding-top: 18%;
   }
   .activity-list li {
     height: 77px;
@@ -996,7 +1085,7 @@ section {
   .main-list li:nth-child(2) {
     margin-top: 19%;
   }
-  .main-list li div {
+  .main-list li .child-img {
     margin: 0 auto;
     width: 170px;
     height: 160px;

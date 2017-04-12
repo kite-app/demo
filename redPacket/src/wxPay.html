@@ -21,9 +21,7 @@
 //      opened.opener = null;
 //      opened.close();
 //  }
-    require(['index'],function(index){
-
-    })
+    require(['app/payFun'],function(payFun){})
 	</script>
 	
 </head>
@@ -36,23 +34,40 @@
 			<div id="main">
 				<div class="main-box">
 					<div class="head">
-						<div class="tips-msg">
+						<!--<div class="tips-msg">
 							<div class='text-msg'>
 								<span class='tips-title'>幸运红包</span>&ensp;
 								<span>恭喜&ensp;我男神弓巾&ensp;用户抽中大奖<span class='money'>199</span>元！</span>
 							</div>
-						</div>
+						</div>-->
 						<div class='head-bgc'><img src="image/head.png" alt="" /></div>
 					</div>
 					<div class="main">
-						<div class="content"></div>
+						<div class="content">
+							<div class='wxpay-box'>
+								<img src="image/wxpay.png" alt="" />
+								<div class='wxpay-text'>
+									<div class='wxpay-title'>抢红包步骤</div>
+									<p class='wxpay-tips'>支付2元抢1~5元红包</p>
+									<div class='wxpay-first clear'>
+										<div>一.微信支付</div>
+										<p>￥<span class='wxpay-money'>2</span></p>
+										<span class='wxpay'>立即支付</span>
+									</div>
+									<div class='wxpay-two clear'>
+										<div>二.支付完成后，记得去拆红包哦！</div>
+										<p class='activity-url'>现在去抢红包</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<footer>
 			<div id="footer">
-				<ul class='btn-list clear'>
+				<ul class='btn-list'>
 					<li class='max'>抢红包<span>|</span></li>
 					<li class='max'>红包记录<span>|</span></li>
 					<li class='max'>个人中心<span>|</span></li>

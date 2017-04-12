@@ -1,0 +1,16 @@
+{
+  "name": "kite",
+  "version": "1.0.0",
+  "description": "redPacket_system",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "pkg": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

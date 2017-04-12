@@ -1,0 +1,536 @@
+//**********主体布局样式***********//
+body,section{
+    height: 100%;
+    font-family: @fn;
+}
+.clear:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#head{
+    
+}
+#main{
+    position:fixed;
+    bottom:50px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    //mian-box
+.main-box{
+    height: 100%;
+    background-color: @bgc;
+    .head{
+        position:relative;
+        width: 100%;
+        height: 40%;
+        .tips-msg{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            font-family: @fn;
+            font-size: 12px;
+            line-height: 35px;
+            color: white;
+            text-align: center;
+            z-index: 2;
+            background-color: rgba(51, 51, 51, 0.4);
+            .text-msg{
+             opacity: 1;  
+            }
+            .tips-title{
+                color: white;
+                padding: 2px 5px;
+                border: 1px solid #ffe44b;
+                border-radius: 10px;
+                color: #ffe44b;
+            }
+            .money{
+                color: #ffe44b;
+            }         
+        }
+        .head-bgc{
+            position: fixed;
+            top:-8px;
+            left:0;
+            z-index: 1;
+            width: 100%;
+            height:40%;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+    .main{
+        width: 100%;
+        height: 60%;
+        .content{
+            width: 80%;
+            height: 100%;
+            margin:0 auto;
+           background:url(../../image/main-bgc.png);
+        }
+    }
+} 
+}
+#footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color: black;
+    .btn-list{
+        li{
+            float: left;
+            width: 20%;
+            color:white;
+            padding: 25px 0;
+            line-height: 10%;
+            font-size: 14px;
+            font-family: @fn;
+            text-align: center;
+            box-sizing: border-box;
+            span{
+                margin-left: 18%;
+            }
+        }
+        .max{
+            width: 23%;
+        }
+        .min-x{
+            width: 18%;
+        }
+        .min-s{
+            width: 9%;
+        }
+    }
+}
+//**********首页列表样式***********//
+.main-list{
+    li{
+        float: left;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        margin-top: 12%;
+        div{
+            margin:0 auto;
+            width: 97px;
+            height: 97px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }          
+}
+.main-list li:nth-child(1),.main-list li:nth-child(2){
+    margin-top:27%;
+}
+//**********抢红包列表样式***********//
+.activity-list{
+    li{
+        float: left;
+        width:20%;
+        height:80px;
+        margin-top: 10px;
+        margin-left: 4%;
+        div{
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.activity-list li:nth-child(1),.activity-list li:nth-child(2),.activity-list li:nth-child(3),.activity-list li:nth-child(4),{
+    margin-top: 40px;
+}
+//**********红包记录列表样式***********//
+.record-box{
+    .title{
+        font-family: @fn;
+        font-size: 18px;
+        font-weight: bold;
+        color: @bgc;
+        width: 90%;
+        text-align:center;
+        margin: 0 auto;
+        padding: 30px 0 8px;
+        border-bottom: 3px solid white;
+    }
+    .record-main{
+        .list-title{                      
+            div{
+                float: left;
+                width: 60%; 
+                text-align: center;    
+                padding: 10px 0;               
+                span{
+                    display: inline-block;
+                    font-size: 16px;
+                    padding: 3px 6px;
+                    color:white;
+                    box-sizing: border-box;
+                    background-color: #be0a14; 
+                    border-radius:3px;               
+                }       
+            }            
+        }
+         .list-title div:nth-child(1){
+             width: 40%;
+         }
+    }
+    .record-list{
+        width: 100%;
+        margin: 0 auto;
+        li{
+
+            padding: 5px 0;
+            font-size: 14px;
+            color: @bgc;
+           :nth-child(1){
+              display: inline-block; 
+              font-weight: bold;
+              width: 30%;
+              margin: 0 16% 0 5%;
+              text-align: center;
+           }
+           :nth-child(2){
+              width: 60%;
+           }
+        }
+    }
+}
+//**********个人中心样式***********//
+.personal-box{  
+    padding-top: 43px;
+    width: 93%;
+    margin: 0 auto;
+    .total-list{
+        border-radius: 5px;
+        background-color: white;
+        li{
+            position:relative;
+            float: left;
+            width: 33%;
+            font-size: 14px;
+            text-align: center;
+            box-sizing: border-box;
+            :nth-child(1){
+                margin-top: 7%;
+            }
+            div{
+                padding: 3% 0;
+            }
+        }
+        .personal-tips{
+            font-size: 10px;
+            padding-bottom: 8px;
+        }
+        .line-flag{
+            position:absolute;
+            right: 0;
+            top:13px;
+            height: 38px;
+            border-right: 1px solid #dddddb;
+        }
+    }
+    .personal-red{
+        color: #fe2d4c;
+        font-size: 16px;
+    }   
+    .personal-list{
+        font-size: 14px;
+        margin-top: 5%;
+        padding-top:3%;
+        padding-bottom: 3%;
+        border-radius:5px;
+        background-color: white; 
+        :nth-child(4){
+            border-bottom: 1px solid #dddddb;
+        }      
+        li{
+            position: relative;
+            margin:0 auto;
+            width: 90%;
+            border-top: 1px solid #dddddb;
+            i{
+                float: left;
+                width: 20px;
+                height: 20px;  
+                margin:6% 5px 0 0;           
+                img{
+                    width: 100%;
+                    height:100%;
+                }
+            }
+        }
+        .my-money{
+            float: left;
+            padding: 14px 0 ;
+        }
+        .recharge{
+            float: right;
+            padding: 8px;
+            margin: 7px 5px 7px 0;
+            background-color: #fe2d4c;
+            color:white;
+            border-radius:5px;
+        }
+        .text-url{
+            display: inline-block;;
+            padding: 7% 0; 
+        }
+        .arrow{
+            position:absolute;
+            right: 5px;
+            top:28%;
+            display: inline-block;
+            width: 12px;
+            height: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+//**********推广样式***********//
+.extension-box{
+    position:relative;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto ;
+    padding-top:30px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .extension-text{
+        position:absolute;
+        top:40%;
+        left:0;
+        z-index: 1;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        color: #e9301b;      
+        p{
+            padding-bottom: 5px;
+        }
+        div{
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .extension-btn{
+            display: inline-block;
+            margin: 5px 0;
+            padding: 3px 6px;
+            color:white;
+            border-radius:3px;
+            background-color: #e12017;           
+        }
+        .readme{
+            margin:0 10px ;
+        }
+    }
+}
+//**********客服样式***********//
+.service-box{
+    width: 100%;
+    height: 100%;
+    .fireworks{
+        width: 80%;
+        height: 35%;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+    }
+    .QRcode2{
+        float: left;
+        width: 51%;
+        height: 50%;
+        padding-top: 4%;
+        margin-left: 4%;
+        margin-right: 2%;
+        border-radius: 5px;
+        background-color: #fee499;
+        .code{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        p{
+           font-size: 12px;
+           margin: 5% 0;
+           text-align: center;
+        }
+        .text{
+            width: 60%;
+            margin: 5% auto;
+            font-size: 13px;
+            color: white;
+            padding: 5px 5px;
+            border-radius:5px;
+            background-color: #c50915;
+            text-align: center;
+        }
+    }
+    .gril{
+        float: right;
+        width: 43%;
+        height: 50%;
+    }
+    img{
+        width: 100%;
+        height:100%;
+    }
+}
+//**********媒体查询***********//
+//iphone5
+@media screen and (min-width: 320px) {
+    //底部适配iphone5
+    #footer .btn-list li span {
+        margin-left: 12%;
+    }
+//   //抢红包列表样式适配iphone5
+    .activity-list li{
+        height:66px;
+    } 
+}
+@media screen and (min-width: 360px) {
+    .activity-list li{
+        height:76px;
+    } 
+}
+//iphone 6 
+@media screen and (min-width: 375px) {
+    .activity-list li{
+        height:80px;
+    }
+     //底部适配iphone5
+    #footer .btn-list li span {
+        margin-left: 15%;
+    }
+    //福包
+    .main-list li div {
+        margin: 0 auto;
+        width: 110px;
+        height: 110px;
+    }
+    //个人中心
+    .personal-box .total-list li :nth-child(1) {
+        margin-top: 20%;
+    }
+    .personal-box .total-list .line-flag {
+        height: 43px;
+    }
+    .personal-box .personal-list .recharge {
+
+        margin: 12px 5px 12px 0;
+    }
+    .personal-box .personal-list .my-money {
+        float: left;
+        padding: 18px 0;
+    }
+    .personal-box .personal-list {
+        margin-top: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    } 
+    //推广
+    .extension-box .extension-text {
+        top: 42%;
+    }
+    .extension-box .extension-text p {
+        padding-bottom: 6px;
+    } 
+    .extension-box .extension-text .extension-btn {
+        margin: 8px 0 10px 0;
+        padding: 3px 6px;
+    } 
+    //客服
+    .service-box .QRcode2 {
+        height: 45%;    
+        padding-top: 8%;
+    }
+}
+//iphone 6 plus
+@media screen and (min-width: 414px) {
+     //底部适配iphone5
+    #footer .btn-list li span {
+        margin-left: 17%;
+    }
+    //福包
+    .main-list li div {
+        margin: 0 auto;
+        width: 116px;
+        height: 120px;
+    }
+    .activity-list li{
+        height:90px;
+    }
+    .extension-box .extension-text {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        z-index: 1;
+    }
+    //头部背景图
+    #main .main-box .head .head-bgc {
+        height: 43%;
+    }
+}
+//ipad 
+@media screen and (min-width: 768px) {
+    .activity-list li{
+        height:132px;
+    }
+     //福包
+    .main-list li:nth-child(1), .main-list li:nth-child(2) {
+        margin-top: 19%;
+    }
+    .main-list li div {
+        margin: 0 auto;
+        width: 170px;
+        height: 160px;
+    }
+    //红包记录时间样式调整
+    .record-box .record-list li :nth-child(1){
+        margin: 0 26% 0 5%;
+    }
+    //头部背景图
+    #main .main-box .head .head-bgc {
+        height: 45%;
+    }
+     //底部样式
+    #footer .btn-list li span {
+        margin-left: 28%;
+    }
+}
+//ipad pro
+@media screen and (min-width: 1024px) {
+    .activity-list li{
+        height:183px;
+    }
+    //底部样式
+    #footer .btn-list li span {
+        margin-left: 33%;
+    }
+    //头部背景图
+    #main .main-box .head .head-bgc {
+        height: 44%;
+    }
+}

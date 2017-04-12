@@ -779,7 +779,7 @@ section {
   float: left;
   width: 20px;
   height: 20px;
-  margin: 6% 5px 0 0;
+  margin: 5% 5px 0 0;
 }
 .personal-box .personal-list li i img {
   width: 100%;
@@ -799,7 +799,7 @@ section {
 }
 .personal-box .personal-list .text-url {
   display: inline-block;
-  padding: 7% 0;
+  padding: 6% 0;
 }
 .personal-box .personal-list .arrow {
   position: absolute;
@@ -921,7 +921,7 @@ section {
 }
 @media screen and (min-width: 375px) {
   .activity-list li {
-    height: 70px;
+    height: 75px;
   }
   #footer .btn-list li span {
     margin-left: 15%;
@@ -938,10 +938,10 @@ section {
     height: 43px;
   }
   .personal-box .personal-list .recharge {
-    margin: 10px 5px 10px 0;
+    margin: 8px 5px 8px 0;
   }
   .personal-box .personal-list .my-money {
-    padding: 16px 0;
+    padding: 14px 0;
   }
   .personal-box .personal-list {
     margin-top: 5%;

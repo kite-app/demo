@@ -655,7 +655,7 @@ section {
   float: left;
   width: 20%;
   height: 80px;
-  margin-top: 4%;
+  margin-top: 3%;
   margin-left: 4%;
 }
 .activity-list li div {
@@ -779,7 +779,7 @@ section {
   float: left;
   width: 20px;
   height: 20px;
-  margin: 5% 5px 0 0;
+  margin: 4% 5px 0 0;
 }
 .personal-box .personal-list li i img {
   width: 100%;
@@ -799,7 +799,7 @@ section {
 }
 .personal-box .personal-list .text-url {
   display: inline-block;
-  padding: 6% 0;
+  padding: 5% 0;
 }
 .personal-box .personal-list .arrow {
   position: absolute;

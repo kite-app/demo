@@ -649,7 +649,7 @@ section {
 }
 .main-list li:nth-child(1),
 .main-list li:nth-child(2) {
-  margin-top: 25%;
+  margin-top: 22%;
 }
 .activity-list li {
   float: left;
@@ -921,7 +921,7 @@ section {
 }
 @media screen and (min-width: 375px) {
   .activity-list li {
-    height: 75px;
+    height: 72px;
   }
   #footer .btn-list li span {
     margin-left: 15%;
@@ -944,7 +944,7 @@ section {
     padding: 14px 0;
   }
   .personal-box .personal-list {
-    margin-top: 5%;
+    margin-top: 4%;
     padding-top: 5%;
     padding-bottom: 5%;
   }

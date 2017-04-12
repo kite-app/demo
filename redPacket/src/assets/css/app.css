@@ -649,13 +649,13 @@ section {
 }
 .main-list li:nth-child(1),
 .main-list li:nth-child(2) {
-  margin-top: 22%;
+  margin-top: 20%;
 }
 .activity-list li {
   float: left;
   width: 20%;
   height: 80px;
-  margin-top: 10px;
+  margin-top: 4%;
   margin-left: 4%;
 }
 .activity-list li div {

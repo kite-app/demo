@@ -9,10 +9,9 @@ define(["jquery","doT","director"],function($,tpl,route){
 				var index = $(this).index();
 				switch(index){
 					case 0://选择2元			
-						alert('click')
 						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=2";
 						break;
-					case 1://选择5元	
+					case 1://选择10元	
 						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=10";
 						break;
 					case 2://选择50元	

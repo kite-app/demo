@@ -581,7 +581,7 @@ section {
 }
 #main .main-box .head .head-bgc {
   position: fixed;
-  top: -8px;
+  top: -10px;
   left: 0;
   z-index: 1;
   width: 100%;
@@ -596,7 +596,7 @@ section {
   height: 60%;
 }
 #main .main-box .main .content {
-  width: 80%;
+  width: 86%;
   height: 100%;
   margin: 0 auto;
   background: url(../../image/main-bgc.png);
@@ -921,7 +921,7 @@ section {
 }
 @media screen and (min-width: 375px) {
   .activity-list li {
-    height: 80px;
+    height: 65px;
   }
   #footer .btn-list li span {
     margin-left: 15%;
@@ -973,9 +973,6 @@ section {
     width: 116px;
     height: 120px;
   }
-  .activity-list li {
-    height: 90px;
-  }
   .extension-box .extension-text {
     position: absolute;
     top: 45%;
@@ -984,6 +981,15 @@ section {
   }
   #main .main-box .head .head-bgc {
     height: 43%;
+  }
+  .activity-list li {
+    height: 85px;
+  }
+  .activity-list li:nth-child(1),
+  .activity-list li:nth-child(2),
+  .activity-list li:nth-child(3),
+  .activity-list li:nth-child(4) {
+    margin-top: 61px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1008,10 +1014,19 @@ section {
   #footer .btn-list li span {
     margin-left: 28%;
   }
+  .activity-list li {
+    height: 115px;
+  }
+  .activity-list li:nth-child(1),
+  .activity-list li:nth-child(2),
+  .activity-list li:nth-child(3),
+  .activity-list li:nth-child(4) {
+    margin-top: 90px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .activity-list li {
-    height: 183px;
+    height: 170px;
   }
   #footer .btn-list li span {
     margin-left: 33%;

@@ -55,7 +55,7 @@ body,section{
         }
         .head-bgc{
             position: fixed;
-            top:-8px;
+            top:-10px;
             left:0;
             z-index: 1;
             width: 100%;
@@ -70,7 +70,7 @@ body,section{
         width: 100%;
         height: 60%;
         .content{
-            width: 80%;
+            width: 86%;
             height: 100%;
             margin:0 auto;
            background:url(../../image/main-bgc.png);
@@ -418,7 +418,7 @@ body,section{
 //iphone 6 
 @media screen and (min-width: 375px) {
     .activity-list li{
-        height:80px;
+        height:65px;
     }
      //底部适配iphone5
     #footer .btn-list li span {
@@ -479,9 +479,6 @@ body,section{
         width: 116px;
         height: 120px;
     }
-    .activity-list li{
-        height:90px;
-    }
     .extension-box .extension-text {
         position: absolute;
         top: 45%;
@@ -491,6 +488,13 @@ body,section{
     //头部背景图
     #main .main-box .head .head-bgc {
         height: 43%;
+    }
+    //红包列表
+     .activity-list li{
+        height:85px;
+    }
+    .activity-list li:nth-child(1), .activity-list li:nth-child(2), .activity-list li:nth-child(3), .activity-list li:nth-child(4) {
+        margin-top: 61px;
     }
 }
 //ipad 
@@ -519,11 +523,18 @@ body,section{
     #footer .btn-list li span {
         margin-left: 28%;
     }
+     //红包列表
+     .activity-list li{
+        height:115px;
+    }
+    .activity-list li:nth-child(1), .activity-list li:nth-child(2), .activity-list li:nth-child(3), .activity-list li:nth-child(4) {
+        margin-top: 90px;
+    }
 }
 //ipad pro
 @media screen and (min-width: 1024px) {
     .activity-list li{
-        height:183px;
+        height:170px;
     }
     //底部样式
     #footer .btn-list li span {

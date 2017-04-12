@@ -9,16 +9,16 @@ define(["jquery","doT","director"],function($,tpl,route){
 				var index = $(this).index();
 				switch(index){
 					case 0://选择2元						
-						window.location.href = "http://127.0.0.1:8020/redPacket/src/wxPay.html?money=2";
+						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=2";
 						break;
 					case 1://选择5元	
-						window.location.href = "http://127.0.0.1:8020/redPacket/src/wxPay.html?money=10";
+						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=10";
 						break;
 					case 2://选择50元	
-						window.location.href = "http://127.0.0.1:8020/redPacket/src/wxPay.html?money=50";
+						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=50";
 						break;
 					default://选择100元	
-						window.location.href = "http://127.0.0.1:8020/redPacket/src/wxPay.html?money=100";
+						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=100";
 				}
 			})
 		})

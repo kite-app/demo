@@ -26,7 +26,7 @@ define(['jquery','doT','director','pay'],function($,tpl,route,wx){
 				$('.wxpay-money').html('99.9');;	
 		}
 		$('.activity-url').on('click',function(){
-			window.location.href = "http://127.0.0.1:8020/redPacket/src/index.html#/activity";
+			window.location.href = "https://kite-app.github.io/demo/redPacket/src/index.html#/activity";
 		})
 	}
 	

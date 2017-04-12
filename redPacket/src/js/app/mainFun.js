@@ -8,7 +8,8 @@ define(["jquery","doT","director"],function($,tpl,route){
 			$('body').on('click',".main-list li",function(){
 				var index = $(this).index();
 				switch(index){
-					case 0://选择2元						
+					case 0://选择2元			
+						alert('click')
 						window.location.href = "https://kite-app.github.io/demo/redPacket/src/wxPay.html?money=2";
 						break;
 					case 1://选择5元	

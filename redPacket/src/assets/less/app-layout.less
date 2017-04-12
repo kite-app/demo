@@ -8,6 +8,12 @@ body,section{
     display:block;
     clear:both;
 }
+.white{
+    color:white;
+}
+.active{
+    color: #ebd248;
+}
 #container{
     height:100%;
 }
@@ -20,8 +26,6 @@ body,section{
     left:0;
     width: 100%;
     height: 100%;
-
-
 .main-box{
     height: 100%;
     background-color: @bgc;
@@ -91,7 +95,6 @@ body,section{
         li{
             float: left;
             width: 20%;
-            color:white;
             padding: 25px 0;
             line-height: 10%;
             font-size: 14px;
@@ -100,6 +103,7 @@ body,section{
             box-sizing: border-box;
             span{
                 margin-left: 18%;
+                color:white;
             }
         }
         .max{
@@ -378,46 +382,58 @@ body,section{
 .service-box{
     width: 100%;
     height: 100%;
+    position:relative;
     .fireworks{
+        position:absolute; 
+        top:0;
+        left:50%;  
         width: 80%;
-        height: 35%;
+        height: 50%;
         margin: 0 auto;
-        padding: 20px 0 0 0;
+        padding-top: 6%;
+        -webkit-transform: translate(-50%,0%);
+        -moz-transform: translate(-50%,0%);
+        -ms-transform: translate(-50%,0%);
+        -o-transform: translate(-50%,0%);
+        transform: translate(-50%,0%);
     }
-    .QRcode2{
-        float: left;
-        width: 51%;
-        height: 50%;
-        padding-top: 4%;
-        margin-left: 4%;
-        margin-right: 2%;
-        border-radius: 5px;
-        background-color: #fee499;
-        .code{
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
+    .service-bottom{
+         padding-top: 50%;   
+        .QRcode2{
+            float: left;
+            width: 51%;
+            height: 50%;
+            padding-top: 4%;
+            margin-left: 4%;
+            margin-right: 2%;
+            border-radius: 5px;
+            background-color: #fee499;
+            .code{
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+            }
+            p{
+               font-size: 12px;
+               margin: 5% 0;
+               text-align: center;
+            }
+            .text{
+                width: 60%;
+                margin: 5% auto;
+                font-size: 13px;
+                color: white;
+                padding: 5px 5px;
+                border-radius:5px;
+                background-color: #c50915;
+                text-align: center;
+            }
         }
-        p{
-           font-size: 12px;
-           margin: 5% 0;
-           text-align: center;
+        .gril{
+            float: right;
+            width: 43%;
+            height: 50%;
         }
-        .text{
-            width: 60%;
-            margin: 5% auto;
-            font-size: 13px;
-            color: white;
-            padding: 5px 5px;
-            border-radius:5px;
-            background-color: #c50915;
-            text-align: center;
-        }
-    }
-    .gril{
-        float: right;
-        width: 43%;
-        height: 50%;
     }
     img{
         width: 100%;

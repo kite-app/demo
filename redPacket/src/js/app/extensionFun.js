@@ -1,8 +1,8 @@
 define(["jquery","doT","director"],function($,tpl,route){
 	var extensionFun = function(){
 		$('.content').load("views/main-tpl.html",function(){
-			var main_tpl = tpl.template($('#extension-tpl').html());
-			$('.content').html(main_tpl());
+			var extension_tpl = tpl.template($('#extension-tpl').html());
+			$('.content').html(extension_tpl());		
 		})
 	}
 	

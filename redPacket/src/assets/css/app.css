@@ -536,6 +536,12 @@ section {
   display: block;
   clear: both;
 }
+.white {
+  color: white;
+}
+.active {
+  color: #ebd248;
+}
 #container {
   height: 100%;
 }
@@ -614,7 +620,6 @@ section {
 #footer .btn-list li {
   float: left;
   width: 20%;
-  color: white;
   padding: 25px 0;
   line-height: 10%;
   font-size: 14px;
@@ -624,6 +629,7 @@ section {
 }
 #footer .btn-list li span {
   margin-left: 18%;
+  color: white;
 }
 #footer .btn-list .max {
   width: 23%;
@@ -886,14 +892,26 @@ section {
 .service-box {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .service-box .fireworks {
+  position: absolute;
+  top: 0;
+  left: 50%;
   width: 80%;
-  height: 35%;
+  height: 50%;
   margin: 0 auto;
-  padding: 20px 0 0 0;
+  padding-top: 6%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
-.service-box .QRcode2 {
+.service-box .service-bottom {
+  padding-top: 50%;
+}
+.service-box .service-bottom .QRcode2 {
   float: left;
   width: 51%;
   height: 50%;
@@ -903,17 +921,17 @@ section {
   border-radius: 5px;
   background-color: #fee499;
 }
-.service-box .QRcode2 .code {
+.service-box .service-bottom .QRcode2 .code {
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
-.service-box .QRcode2 p {
+.service-box .service-bottom .QRcode2 p {
   font-size: 12px;
   margin: 5% 0;
   text-align: center;
 }
-.service-box .QRcode2 .text {
+.service-box .service-bottom .QRcode2 .text {
   width: 60%;
   margin: 5% auto;
   font-size: 13px;
@@ -923,7 +941,7 @@ section {
   background-color: #c50915;
   text-align: center;
 }
-.service-box .gril {
+.service-box .service-bottom .gril {
   float: right;
   width: 43%;
   height: 50%;

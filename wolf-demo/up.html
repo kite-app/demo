@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>wolf</title>
+</head>
+<body>
+	<img src="img/h0.png" id="wolf">	
+	<script type="text/javascript">
+	var wolf = document.getElementById("wolf");
+	var index = 0;
+	var timer = setInterval(function() {
+		index++;
+		if(index > 9) {
+			index = 0;
+		}
+		wolf.src = "img/h"+index+".png";
+	},60)
+	</script>
+</body>
+</html>

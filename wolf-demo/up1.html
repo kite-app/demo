@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>wolf</title>
+	<style type="text/css">
+		#wolf {
+			background: url(img/h.png) no-repeat;
+			width:108px;
+			height: 101px;
+			position: absolute;
+			left:100px;
+			top:100px;
+			border:1px solid red;
+			background-position: 0 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="wolf">
+		
+	</div>
+	<script type="text/javascript">
+	var wolf = document.getElementById("wolf");
+	var index = 0;
+	var timer = setInterval(function() {
+		index++;
+		if(index > 5) {
+			index = 0;
+		}
+		wolf.style.backgroundPosition = - index * 108 + "px 0";
+	},100)
+	</script>
+</body>
+</html>

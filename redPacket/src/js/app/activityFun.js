@@ -11,6 +11,7 @@ define(['jquery','doT','director'],function($,tpl,route){
 			    $iframe.off('load').remove();
 			  })
 			}).appendTo($('body'));
+			// fdfasfasa
 		})
 	}
 	

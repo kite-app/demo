@@ -151,7 +151,7 @@ define(['jquery','doT','director'],function($,tpl,route){
 							},300)
 						}
 						chidrenImg[num].getElementsByTagName('img')[0].src = "image/"+chidrenImg[num].index +".png";						
-					},31)					
+					},100)					
 				}
 
 				var timer = setInterval(function() {
